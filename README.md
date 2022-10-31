@@ -6,7 +6,7 @@ Proper Reviews has 4 primary components:
 
 1. A sample repository named "template". This repository's default branch (main) is set with the branch protection policies that you want to apply to all **new** repositories. To change the rules, just change the repo's settings for branch protection policy, and these changes will apply to the new repositories from now on.
 2. A GitHub Actions workflow named [Proper-Reviews](https://github.com/JuliuskGitHub/Proper-Reviews/blob/main/.github/workflows/Proper-Reviews.yml) that reads the template repo's branch protection settings and applies them to a repository when it is created. In order to ensure that new repos, empty or otherwise, can have the policies applied to them, the workflow will create a readme file as a first commit, if no other file exists. Finally, the workflow will create an **issue** in the repository, listing the rules that were set, as well as mentioning whoever created the repo.
-3. An Azure Function named [BranchProtector]](<https://repoprotector.azurewebsites.net/api/BranchProtector>) that triggers the aforementioned workflow. This Azure Function has an https endpoint that gets called by a webhook (see below), whenever a new repository is created in the organization.
+3. An Azure Function named [BranchProtector]([<https://repoprotector.azurewebsites.net/api/BranchProtector>](https://github.com/JuliuskGitHub/Proper-Reviews/tree/main/BranchProtectorFunc)) that triggers the aforementioned workflow. This Azure Function has an https endpoint that gets called by a webhook (see below), whenever a new repository is created in the organization.
 4. An organization-level webhook that triggers the aforementioned Azure Function whenever a repository is created within the organization.
 
 ## Setup
