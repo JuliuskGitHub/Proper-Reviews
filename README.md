@@ -15,7 +15,7 @@ Proper Reviews has 4 primary components:
 
 To set up the repository, simply go to the settings page, and under "Branches" go to the branch protection rules for the main branch. Edit the rules and save them to have them apply to new repositories.
 
-### Ensure-reviews
+### Proper-Reviews
 
 You should not need to modify this workflow, except if you wish to add or change its behavior. See [GitHub Actions documentation](https://github.com/features/actions) for more information on hiow to do this.
 
