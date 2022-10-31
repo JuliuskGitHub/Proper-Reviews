@@ -51,9 +51,9 @@ from the command line, make sure you are in the function's folder, and run ```fu
 4. Under events to trigger, select the option to select individual events, and pick **Repositories**.
 5. Save the webhook and leave the page.
 
-## Using Review Sentinel
+## Using Proper Reviews
 
-In order to activate Review Sentinel, simply create a new repository in the organization. The automation will take care of the rest. Please note that since this is a free-tier account, this will only work with public repositories.
+In order to activate Proper Reviews, simply create a new repository in the organization. The automation will take care of the rest. Please note that since this is a free-tier account, this will only work with public repositories.
 
 ## Attributions
 
